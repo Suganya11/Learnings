@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact page</title>
+    <style>
+      a {
+        padding: 20px;
+        width: 50;
+        background-color: coral;
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="assets/download.png" alt="etherinfotech image" loading="lazy" />
+
+      <hr />
+      <a href="index.html">Homepage</a>
+      <a href="about.html">About page</a>
+      <a href="contact.html">Contact page</a>
+      <br />
+      <br /><br /><br />
+    </header>
+    <main>
+      <section>
+        <form action="submit.php" method="post">
+          <table>
+            <tr>
+              <td>
+                <label for="name">Name</label>
+              </td>
+              <td><input type="text" id="name" name="name" /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Email</label>
+              </td>
+              <td>
+                <input type="email" id="email" name="email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="comments">Comments</label>
+                <input
+                  type="textarea"
+                  id="comments"
+                  name="comments"
+                  min="5"
+                  max="20"
+                />
+              </td>
+            </tr>
+            <input type="submit" value="submit" />
+          </table>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <table border="2">
+        <caption>
+          Vintage employees
+        </caption>
+        <tr>
+          <th>name</th>
+          <th>designtion</th>
+          <th>experience</th>
+        </tr>
+        <tr>
+          <td>Suganya</td>
+
+          <td rowspan="2">Software Developer</td>
+
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Jamuna</td>
+
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Moshika</td>
+
+          <td>Testing</td>
+
+          <td rowspan="2">2</td>
+        </tr>
+        <tr>
+          <td>Rathiksha</td>
+
+          <td>Fullstack</td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>
